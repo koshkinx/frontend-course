@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Regular.woff") format("woff");
@@ -9,6 +17,12 @@
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Medium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cera Pro";
+  src: url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -31,6 +45,7 @@ body {
 }
 
 .modal {
+  position: relative;
   background: white;
   border-bottom: 10px solid #46A358;
   padding-bottom: 25px;
@@ -45,41 +60,25 @@ body {
   align-items: center;
 }
 
-.close-wrapper {
-  display: flex;
-  /* position: relative; */
-  justify-content: end;
-  width: 500px;
-  margin: 0 auto;
-  
-}
+
 
 .close {
-  position: relative;
-  top: 16px;
-  right: 20px;
-  border: none;
-  background: white;
-  cursor: pointer;
-  padding: 3px;
-}
-
-.close span {
-  
   position: absolute;
-  width: 12px;
-  height: 2px;
-  background: #46A358;
-
+  top: 13px;
+  right: 13px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.close span:first-child {
-  transform: rotate(45deg);
+.close img {
+  width: 18px;
+  height: 18px;
 }
 
-.close span:last-child {
-  transform: rotate(-45deg);
-}
+
+
+
 
 .auth__tabs {
   margin-top: 52px;
@@ -193,4 +192,8 @@ body {
 .social-btn img {
   width: 20px;
   height: 20px;
+}
+
+.social-login{
+  width: 300px;
 }

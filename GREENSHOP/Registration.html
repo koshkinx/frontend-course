@@ -9,13 +9,10 @@
   <body>
     <div class="overlay">
       <div class="modal">
-        <!-- вся твоя форма регистрации -->
-        <div class="close-wrapper">
-          <button type="button" class="close">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+        <button type="button" class="close">
+          <img src="./icons/close.svg" alt="close" />
+        </button>
+
         <section class="register">
           <div class="auth__tabs">
             <a href="#" class="tab">Login</a>
@@ -32,7 +29,12 @@
               name="email"
               placeholder="Enter your email address"
             />
-            <input class="password" type="password" name="password" placeholder="Password" />
+            <input
+              class="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
             <input
               type="password"
               name="confirmPassword"
@@ -40,25 +42,25 @@
             />
 
             <button type="submit" class="register-btn">Register</button>
-
-            <div class="social-login">
-              <div class="divider-social">
-                <span></span>
-                <p>Or register with</p>
-                <span></span>
-              </div>
-
-              <button type="button" class="social-btn">
-                <img src="./icons/google_icon.svg" alt="Google" />
-                Continue with Google
-              </button>
-
-              <button type="button" class="social-btn">
-                <img src="./icons/facebook_icon.svg" alt="Facebook" />
-                Continue with Facebook
-              </button>
-            </div>
           </form>
+
+          <div class="social-login">
+            <div class="divider-social">
+              <span></span>
+              <p>Or register with</p>
+              <span></span>
+            </div>
+
+            <button type="button" class="social-btn">
+              <img src="./icons/google_icon.svg" alt="Google" />
+              Continue with Google
+            </button>
+
+            <button type="button" class="social-btn">
+              <img src="./icons/facebook_icon.svg" alt="Facebook" />
+              Continue with Facebook
+            </button>
+          </div>
         </section>
       </div>
     </div>
